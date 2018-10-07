@@ -51,7 +51,7 @@ client.on('message', async msg => { // eslint-disable-line
 				await handleVideo(video2, msg, voiceChannel, true); // eslint-disable-line no-await-in-loop
 
 			return msg.channel.send(` **${playlist.title}** تم الإضآفة إلى قأئمة التشغيل`);
-		} else {
+
 			try {
 
 				var video = await youtube.getVideo(url);

@@ -1,1 +1,2 @@
-worker: python audio.py
+
+worker: node bot.js

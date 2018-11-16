@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
  console.log("welcome bot"); 
-  client.user.setGame(`SmooTH,ForEver`,"http://twitch.tv/nackzos")
+  client.user.setGame(`Blood,ForEver`,"http://twitch.tv/nackzos")
 console.log("log");
 });
 

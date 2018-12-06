@@ -18,10 +18,56 @@ const prefix = 'B'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('guildMemberAdd', member => {
      const welcomer =  member.guild.channels.find('name', 'blood');
 
-const w = ['w1.png'];
+const w = ['./w1.png'];
          let Image = Canvas.Image,
             canvas = new Canvas(400, 239),
             ctx = canvas.getContext('2d');
@@ -73,7 +119,7 @@ welcomer.sendFile(canvas.toBuffer())
 })
       });     
 
-    let channel = member.guild.channels.get('513053776299556894');
+    let channel = member.guild.channels.get('520199992762171392');
     if (!channel) {
         console.log("!channel fails");
         return;
@@ -92,7 +138,7 @@ channel.send(`**.#WeeeelcomeTo___Blood___.** :wine_glass:`)
 
 var dat = JSON.parse("{}");
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', 'blood');
+    let channel = member.guild.channels.find('name', 'Blood');
     if (!channel) {
         console.log("!channel fails");
         return;
@@ -111,7 +157,7 @@ client.on("guildMemberAdd", (member) => {
                 if (dat[Inv] < Invite.uses) {
                     console.log(3);
                     console.log(`${member} joined over ${Invite.inviter}'s invite ${Invite.code}`)
- channel.send(` ♥ **تم دعوته من قبل ${Invite.inviter} ♥** `)            
+ channel.send(`***___InvitedBy___*** ${Invite.inviter} :writing_hand: `)            
  }
             dat[Inv] = Invite.uses;
         })
@@ -120,7 +166,6 @@ client.on("guildMemberAdd", (member) => {
 
 
 
-  
 
 
 client.login(process.env.BOT_TOKEN); 
